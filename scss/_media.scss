@@ -1,0 +1,589 @@
+
+@media (max-width: 1400px) {
+  .header {
+    &__address {
+      display: none;
+    }
+  }
+
+  .present {
+    &__content p {
+      font-size: 18px;
+    }
+  }
+
+  .brand {
+    &__title h2 {
+      margin-bottom: 40px;
+    }
+
+    &__wrapper {
+      padding: 180px 0 0;
+    }
+
+    &__content-item h3 {
+      font-size: 18px;
+    }
+
+    &__content-item p br {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .title h2 {
+    font-size: 30px;
+  }
+
+  .header {
+    &__content h1 {
+      font-size: 50px;
+    }
+    &__bg{
+      min-height: 680px;
+    }
+    &__slider{
+      margin-bottom: 50px;
+    }
+  }
+
+  .services {
+    &__container-bg{
+      min-height: 1090px;
+    }
+    &__box {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &__link{
+      padding: 40px 25px;
+    }
+    &__link h4 {
+      font-size: 22px;
+    }
+  }
+
+  .team {
+    top: -60px;
+    &__container-bg{
+      min-height: 750px;
+    }
+    &__box {
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 60px 25px;
+    }
+
+    &__item h5 {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    &__item p {
+      font-size: 16px;
+    }
+
+    &__item img {
+      margin: 0 auto 25px;
+      height: auto;
+    }
+  }
+
+  .clients {
+    top: 80px;
+    padding-bottom: 140px;
+    &__inner .swiper-button-next,
+    &__inner .swiper-button-prev {
+      top: 50%;
+    }
+  }
+
+  .curse {
+    &__content p {
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .header{
+    &__menu-btn {
+      display: block;
+      width: 40px;
+      height: 28px;
+      margin: 0 auto;
+      border: none;
+      background-color: transparent;
+      padding: 0;
+      cursor: pointer;
+      position: relative;
+    }
+  
+    &__menu-btn:hover span {
+      width: 100%;
+    }
+  
+    &__menu-btn span {
+      position: absolute;
+      left: 0;
+      width: 50%;
+      height: 1px;
+      background-color: $white;
+      transition: width 500ms ease;
+    }
+  
+    &__menu-btn::before,
+    &__menu-btn::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: $white;
+      left: 0;
+      transition: transform 500ms ease;
+    }
+  
+    &__menu-btn::before {
+      top: 0;
+    }
+  
+    &__menu-btn::after {
+      bottom: 0;
+    }
+  
+    &__close-btn {
+      display: block;
+      cursor: pointer;
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      margin-bottom: 50px;
+      transition: transform 500ms ease;
+    }
+  
+    &__close-btn svg rect {
+      fill: $white;
+    }
+  
+    &__close-btn svg {
+      transition: transform 750ms ease;
+    }
+  
+    &__close-btn svg:hover {
+      transform: rotate(-360deg)
+    }
+    &__list{
+      display: none;
+    }
+    &__list-adaptive {
+      position: absolute;
+      opacity: 1;
+      visibility: visible;
+      display: flex;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: $title;
+      z-index: 100;
+      padding: 25px 0;
+      transform: translateY(-200%);
+      transition: transform .5s ease-in-out;
+    }
+    
+    &__list-adaptive--active {
+      transform: translateY(0%);
+    }
+    &__item{
+      margin-bottom: 40px;
+    }
+    &__link-adaptive,
+    &__form-adaptive{
+      opacity: 1;
+      visibility: visible;
+    }
+    &__link-adaptive,
+    &__form-adaptive{
+      margin-bottom: 30px;
+    }
+  }
+  .contacts {
+    &__form h4 {
+      font-size: 24px;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .brand {
+    &__container-bg {
+      min-height: 1200px;
+    }
+    &__content{
+      flex-direction: column;
+      grid-gap: 0px;
+    }
+  }
+  .team{
+    top: 0;
+  }
+  .sites {
+    &__box {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  .works{
+    padding-bottom: 50px;
+    &__item-content p{
+      font-size: 16px;
+      max-width: 100%;
+    }
+  }
+  .contacts{
+    &__container-bg{
+      min-height: 1480px;
+    }
+    &__inner{
+      flex-direction: column;
+    }
+    #map-test{
+      margin-top: 50px;
+      max-width: 100%;
+      height: 400px;
+    }
+  }
+}
+
+@media (max-width: 860px) {
+  .title h2{
+    margin-bottom: 40px;
+  }
+  .header{
+    &__bg{
+      min-height: 610px;
+    }
+    &__nav{
+      margin-left: auto;
+    }
+    &__link,
+    &__form{
+      display: none;
+    }
+    &__form-adaptive{
+      display: flex;
+    }
+    &__menu{
+      margin-bottom: 60px;
+    }
+    &__content h1{
+      font-size: 40px;
+      max-width: 480px;
+    }
+    &__slider{
+      margin-bottom: 30px;
+    }
+    &__form-consult{
+      margin-bottom: 10px;
+    }
+  }
+  .services{
+    &__box{
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  .team{
+    &__box{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  .clients{
+    top: 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .works{
+    &__box{
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  .video{
+    &__inner{
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .title h2{
+    max-width: 100%;
+  }
+  .present{
+    &__content p{
+      font-size: 16px;
+    }
+  }
+  .brand{
+    &__container-bg{
+      background-position: center;
+    }
+    &__content-item h3,
+    &__content-item p{
+      font-size: 16px;
+    }
+  }
+  .sites{
+    &__box{
+      grid-gap: 30px;
+    }
+    &__item h3,
+    &__item p{
+      font-size: 16px;
+    }
+  }
+  .curse{
+    &__container-bg{
+      background-position: center;
+    }
+    &__content p{
+      font-size: 16px;
+    }
+  }
+  .programm{
+    &__inner p{
+      font-size: 16px;
+    }
+  }
+  .contacts{
+    &__content{
+      margin-right: 0;
+    }
+    &__radio-text{
+      font-size: 14px;
+    }
+  }
+  .video {
+    &__container-bg{
+      background-position: center;
+    }
+    &__inner{
+      grid-gap: 30px;
+    }
+    &__inner p{
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .title h2{
+    margin-left: 0;
+    font-size: 26px;
+  }
+  .btn-link{
+    width: 235px;
+    height: 55px;
+    font-size: 14px;
+  }
+  .header{
+    &__bg{
+      min-height: 470px;
+    }
+    &__content h1{
+      font-size: 26px;
+      max-width: 340px;
+      margin-bottom: 40px;
+    }
+    &__slider{
+      margin-bottom: 0;
+    }
+    &__menu{
+      margin-bottom: 30px;
+    }
+    &__content{
+      padding: 0 0 40px;
+    }
+    &__content .swiper-button-next::after,
+    &__content .swiper-button-prev::after{
+      font-size: 20px;
+    }
+    .swiper-pagination-bullet{
+      width: 30px;
+      height: 5px;
+    }
+    &__content h1{
+      font-size: 20px;
+    }
+    &__item p{
+      font-size: 14px;
+    }
+    &__form-consult{
+      width: 230px;
+      height: 55px;
+    }
+    &__form-consult p{
+      font-size: 14px;
+    }
+  }
+  .services{
+    &__link{
+      padding: 30px 15px;
+    }
+    &__link h4{
+      font-size: 20px;
+    }
+    &__link p,
+    &__link span{
+      font-size: 14px;
+    }
+  }
+  .team{
+    top: -110px;
+    &__wrapper{
+      padding: 90px 0;
+    }
+    &__item h5{
+      font-size: 16px;
+    }
+    &__item p{
+      font-size: 14px;
+    }
+    &__item img{
+      width: 240px;
+      height: auto;
+    }
+  }
+  .present{
+    &__container-bg{
+      min-height: 520px;
+    }
+    &__inner{
+      padding: 70px 0;
+    }
+    &__content{
+      padding-left: 0;
+    }
+  }
+  .clients{
+    top: -60px;
+    padding-top: 0;
+    padding-bottom: 0px;
+    &__slider{
+      padding: 0 50px;
+    }
+    &__inner .swiper-button-next,
+    &__inner .swiper-button-prev {
+      top: 50%;
+    }
+    &__inner .swiper-button-next::after,
+    &__inner .swiper-button-prev::after{
+      font-size: 20px;
+    }
+  }
+  .brand{
+    &__wrapper{
+      padding: 160px 0 0;
+    }
+    &__container-bg{
+      min-height: 1390px;
+    }
+    &__inner{
+      margin-left: 0;
+    }
+  }
+  .sites{
+    margin-top: -100px;
+    &__inner{
+      margin-left: 0;
+      margin-bottom: 0;
+    }
+    .btn-link{
+      margin-bottom: -70px;
+    }
+  }
+  .curse{
+    &__wrapper{
+      padding: 180px 0 100px;
+    }
+    &__inner{
+      margin-left: 0;
+    }
+    &__image-box{
+      width: 340px;
+      height: 185px;
+    }
+    &__link{
+      bottom: 10px;
+      left: 10px;
+      height: 40px;
+      width: 200px;
+      font-size: 16px;
+    }
+    .btn-link{
+      width: 210px;
+      height: 45px;
+    }
+  }
+  .programm{
+    &__container-bg{
+      min-height: 530px;
+    }
+    &__wrapper{
+      padding: 160px 0 0;
+    }
+    &__inner{
+      margin-left: 0;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 30px;
+    }
+  }
+  .video{
+    &__container-bg{
+      min-height: 760px;
+    }
+    &__inner,
+    &__link{
+      margin-left: 0;
+    }
+    &__inner p{
+      max-width: 100%;
+    }
+  }
+  .works{
+    margin-top: -230px;
+    &__box{
+      grid-gap: 35px 25px;
+    }
+    &__item-image{
+      margin-bottom: 20px;
+    }
+    &__item-content h3{
+      margin-bottom: 15px;
+    }
+  }
+  .contacts{
+    &__container-bg{
+      min-height: 1260px;
+    }
+    &__wrapper{
+      padding-top: 60px;
+    }
+    &__item a,
+    &__item span{
+      font-size: 16px;
+    }
+    &__btn{
+      font-size: 18px;
+    }
+    #map-test{
+      height: 270px;
+    }
+  }
+  .footer{
+    top: -125px;
+    &__copy{
+      margin-left: 0;
+    }
+  }
+}
